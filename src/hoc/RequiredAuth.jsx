@@ -13,7 +13,6 @@ export const RequiredAuth = ({ children }) => {
   } else {
     return <Navigate to="/login" />
   }
-  // return children;
+
 };
 
-//export default RequiredAuth;

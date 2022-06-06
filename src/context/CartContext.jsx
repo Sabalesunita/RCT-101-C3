@@ -12,10 +12,10 @@ export const CartProvider = ({ children }) => {
     setCount(count + 1)
   }
 
-  const removetocart = () => {
+  const removefromcart = () => {
     setCount(count - 1)
   }
 
 
-  return <CartContext.Provider value={{ count, addtocart, removetocart }}>{children}</CartContext.Provider>;
+  return <CartContext.Provider value={{ count, addtocart, removefromcart }}>{children}</CartContext.Provider>;
 };

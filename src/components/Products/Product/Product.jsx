@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { CartContext } from "../../../context/CartContext";
 
 const Product = () => {
-  const { addtocart, removetocart } = useContext(CartContext)
+  const { addtocart, removefromcart } = useContext(CartContext)
   var [count, setCount] = useState(0);
 
   const [Product, setProduct] = useState([])
@@ -46,7 +46,7 @@ const Product = () => {
               </span>
               <button data-cy="product-decrement-cart-item-count-button" onClick={() => {
          }}>-</button>
-              <button data-cy="product-remove-cart-item-button" onClick={removetocart}>Remove from cart</button>
+              <button data-cy="product-remove-cart-item-button" onClick={removefromcart}>Remove from cart</button>
             </div>
           </div>
         )
